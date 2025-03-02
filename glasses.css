@@ -61,50 +61,6 @@ header .block {
 /* main-style */
 
 
-
-/* .choose {
-	display: block;
-	font-size: 50px;
-	font-family: sans-serif;
-	font-weight: 900;
-	color: #e22020;
-	line-height: 10;
-	padding: .6em 1.4em .5em .8em;
-	width: 100%;
-	max-width: 100%;
-	box-sizing: border-box;
-	margin: 0;
-	border: 10px solid #1826e7;
-	box-shadow: 0 10px 0 10px rgba(29, 204, 58, 0.04);
-	border-radius: 0;
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	appearance: none;
-	background-color: #1d9c21;
-	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
-	linear-gradient(to bottom, #eae43e 0%,#dd1515 100%);
-	background-repeat: repeat,no-repeat;
-	background-position: right .7em top 50%, 10 50;
-	background-size: .65em auto, 50%; 
-}
- .choose::-ms-expand {
-	display: none;
-} 
-.choose:hover {
-	border-color: #24b237;
-}
-.choose:focus {
-	border-color: #1ebcd4;
-	box-shadow: 0 0 1px 3px rgba(252, 59, 236, 0.7);
-	box-shadow: 0 0 0 3px -moz-mac-focusring;
-	color: #d70f0f;
-	outline: none;
-}
-
-.choose option {
-	font-weight:normal;
-}  */
-
 .choose {
     display: inline;
     width: 304px;
@@ -144,8 +100,7 @@ main h1 {
     align-items: center;
     flex-wrap: wrap;
     column-gap: 1.5rem;
-    margin: 0 auto;
-    /* margin-top: 3%; */
+    margin: 0 auto
 }
 
 .storeImg {
@@ -157,10 +112,8 @@ main h1 {
 
 .store-content {
     outline: 1px solid #00000020;
-    /* min-width: 21rem; */
     max-width: 24rem;
-    /* max-height: 503px; */
-    border-collapse: collapse; 
+        border-collapse: collapse; 
     margin-top: 5rem;
 }
 
@@ -200,8 +153,6 @@ main h1 {
 .storeConnet a {
     display: flex;
     background: black;
-    /* padding-top: 10px;
-    padding-bottom:10px; */
     color: #fff;
     justify-content: center;
     height: 59px;
@@ -232,11 +183,9 @@ footer {
 
 .item1 ul {
     display: flex;
-    /* width: 400px; */
     text-align: center;
     justify-content: flex-start;
     gap:1.5rem;
-    /* margin: auto 0; */
 }
 
 .item1{
