@@ -1,0 +1,460 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*1140  375 678*/
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0 ;
+    margin: 0 ;
+}
+
+body{
+    font-family: "Noto Sans TC","Roboto","serif";
+    outline:1px solid blue;
+}
+
+header .block, main .block, footer .block  {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+.menu li ,.item1 li{
+    list-style-type: none;
+}
+
+/* background-style */
+header,footer {
+    background-color: #AA0601;
+
+}
+
+/* header-style */
+header .block {
+    max-height: 80px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo img {
+    max-width: 80px;
+    max-height: 48.57px;
+}
+
+.menu {
+    display: flex;
+    width: 400px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: auto 0; */
+}
+
+
+
+/* main-style */
+
+
+
+/* .choose {
+	display: block;
+	font-size: 50px;
+	font-family: sans-serif;
+	font-weight: 900;
+	color: #e22020;
+	line-height: 10;
+	padding: .6em 1.4em .5em .8em;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+	margin: 0;
+	border: 10px solid #1826e7;
+	box-shadow: 0 10px 0 10px rgba(29, 204, 58, 0.04);
+	border-radius: 0;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #1d9c21;
+	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+	linear-gradient(to bottom, #eae43e 0%,#dd1515 100%);
+	background-repeat: repeat,no-repeat;
+	background-position: right .7em top 50%, 10 50;
+	background-size: .65em auto, 50%; 
+}
+ .choose::-ms-expand {
+	display: none;
+} 
+.choose:hover {
+	border-color: #24b237;
+}
+.choose:focus {
+	border-color: #1ebcd4;
+	box-shadow: 0 0 1px 3px rgba(252, 59, 236, 0.7);
+	box-shadow: 0 0 0 3px -moz-mac-focusring;
+	color: #d70f0f;
+	outline: none;
+}
+
+.choose option {
+	font-weight:normal;
+}  */
+
+.choose {
+    display: inline;
+    width: 304px;
+    height: 38px;
+    font-size: 18px;
+    font-family: "Noto Sans TC","Roboto","serif";
+    border-radius: 0;
+    /* appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none; 
+    font-size: initial; 
+    background: url(img/arr.png) no-repeat scroll 96% center #ffffff; */
+    background-size: 13px 8px;
+} 
+
+main h1 {
+    font-size: 48px;
+    border-left: 8px solid #AA0601;
+    margin-top: 5rem;
+}
+
+.location span {
+    font-size:24px;
+}
+
+
+.location {
+    display: flex;
+    align-items:center;
+    margin-top:2%;
+}
+
+/*store-style*/
+.store{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    margin: 0 auto;
+    /* margin-top: 3%; */
+}
+
+.storeImg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.store-content {
+    outline: 1px solid #00000020;
+    /* min-width: 21rem; */
+    max-width: 24rem;
+    /* max-height: 503px; */
+    border-collapse: collapse; 
+    margin-top: 5rem;
+}
+
+.location span {
+    margin-right: 2%;
+}
+
+.storeName {
+    font-size: 24px;
+    height: 52px;
+    border-bottom: 2px solid #00000020;
+    padding-left: 1vw;
+}
+
+.text1 ,.text2 ,.text3 {
+    font-size: 21px;
+    vertical-align:text-top;
+
+} 
+
+.text3 td {
+    height: 60px;
+}
+
+.text1 td, .text2 td, .text3 td{
+    padding-right: .5vw;
+    flex-wrap: wrap;
+}
+
+.text1 svg, .text2 svg, .text3 svg {
+    width: auto;
+    height: auto;
+    padding-left: 1.5rem;
+}
+
+
+.storeConnet a {
+    display: flex;
+    background: black;
+    /* padding-top: 10px;
+    padding-bottom:10px; */
+    color: #fff;
+    justify-content: center;
+    height: 59px;
+    align-items: center;
+}
+
+
+/* footer-style */
+
+.menu a, .item1 a, .item2 a, .item3 a, .storeConnet a {
+    text-decoration: none;
+    color:#fff;
+}
+
+footer {
+    max-height: 353px;
+    margin-top: 5rem;
+}
+
+
+.item1,.item3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.item1 ul {
+    display: flex;
+    /* width: 400px; */
+    text-align: center;
+    justify-content: flex-start;
+    gap:1.5rem;
+    /* margin: auto 0; */
+}
+
+.item1{
+    margin-bottom: 1vw;
+    font-size: 16px;
+}
+
+
+.item1Img {
+    display: flex;
+    gap: 2rem;
+    justify-content:space-between;
+    margin-right: 1vw;
+    padding-top: 1vw;
+}
+
+.item1Img img {
+    align-items: center;
+    justify-content: space-between;
+    max-width: 48px;
+    max-height: 48px;
+}
+
+.telStyle svg,.mailStyle svg {
+    width: auto;
+    height: auto;
+    padding-right: 1vw;
+}
+
+.telStyle a,.mailStyle a {
+    font-size: 36px;
+}
+
+
+.down span {
+    color:#fff;
+}
+.down{
+    margin: 3% 0;
+    padding: 3% 0 0;
+    border-top: 1px solid #fff;
+}
+
+.item3 ul {
+    display: flex;
+    width: 25%;
+    font-size: 14px;
+    text-align: center;
+    justify-content:flex-end;
+    gap:3rem;
+    list-style: none;
+}
+
+
+/* MWD 設計 */
+
+/*1215px*/
+@media screen and (max-width: 1215px) {
+    .store{
+        /* table-layout: fixed;
+        justify-content:flex-start; */
+        column-gap:1rem;
+    }
+
+    .store-content {
+        max-width: 20rem;
+    }
+}
+
+/*1007px*/
+@media screen and (max-width: 1007px) {
+    .store{
+        column-gap:0.5rem;
+    }
+
+    .store-content {
+        outline: 1px solid blue;
+        max-width: 18rem;
+    }
+}
+
+/* header .block, main .block, footer .block  {
+    /* max-width: 895px; */
+    /* margin-left: calc(100%/21);
+    margin-right: calc(100%/21); 
+    padding: 1vw;
+
+}  */
+
+/*897-662px*/
+@media screen and (max-width:897px) {
+    .store{
+        /* table-layout: fixed;
+        justify-content:flex-start; */
+        column-gap:0.5rem;
+       
+
+    }
+    /* .storeImg {
+        width: 100%;
+        height: 224px;
+        
+    } */
+    .store-content {
+        outline: 1px solid #00000020;
+        max-width: 20rem;
+        /* max-height: 503px; */
+        /* border-collapse: collapse; */
+    } 
+    /* .text1 td, .text2 td{
+        height: 54px;
+    }*/
+    
+    header .block, main .block, footer .block  {
+        max-width: 696px;
+        /* margin-left: calc(100%/21);
+        margin-right: calc(100%/21); */
+        padding: 1vw;
+    
+    } 
+
+    .item3 ul {
+        font-size: 12px;
+    }
+    
+}
+
+
+/*661px以下*/ 
+@media screen and (max-width:661px) {
+
+
+    header .block, main .block, footer .block  {
+        max-width: 375px;
+        margin: 0 auto;
+    
+    } 
+
+    header .block{
+        display: block;
+
+    }
+
+
+    .logo img {
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    .menu {
+        display: flex;
+        width: px;
+        font-size: 20px;
+        border-top: 1px solid #fff;
+        text-align: center;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+    
+    .item1 ul{
+        display: none; 
+    }
+        
+       
+
+    
+    .menu a{
+        background: #AA0601;
+        padding: 0 50px;
+    }
+    .store{
+        justify-content: center;
+    }
+
+    .store-content {
+        outline: 1px solid #00000020;
+        max-width: 20rem;
+    } 
+    /* .text1 td, .text2 td{
+        height: 54px;
+    }*/
+    
+
+
+    .item3 ul {
+        font-size: 12px;
+    }
+    
+
+    .item1, .item3 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .item1Img {
+        justify-content: center;
+        margin: 1rem 0;
+    }
+
+    .telStyle, .mailStyle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .telStyle a, .mailStyle a {
+        font-size: 24px;
+    }
+
+    .down {
+        text-align: center;
+    }
+
+    .item3 ul {
+        width: 100%;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+}
