@@ -10,11 +10,12 @@
 * {
     padding: 0 ;
     margin: 0 ;
+    /* outline:1px solid blue; */
 }
 
 body{
     font-family: "Noto Sans TC","Roboto","serif";
-    outline:1px solid blue;
+
 }
 
 header .block, main .block, footer .block  {
@@ -53,7 +54,6 @@ header .block {
     text-align: center;
     justify-content: space-between;
     align-items: center;
-    /* margin: auto 0; */
 }
 
 /* main-style */
@@ -70,8 +70,8 @@ header .block {
     -moz-appearance: none;
     -webkit-appearance: none; 
     font-size: initial; 
-    background: url(img/arr.png) no-repeat scroll 96% center #ffffff; */
-    background-size: 13px 8px;
+    background: url(img/arr.png) no-repeat scroll 96% center #ffffff; 
+    background-size: 13px 8px; */
 } 
 
 main h1 {
@@ -88,7 +88,7 @@ main h1 {
 .location {
     display: flex;
     align-items:center;
-    margin-top:2%;
+    margin-top:2rem;
 }
 
 /*store-style*/
@@ -111,7 +111,7 @@ main h1 {
 .store-content {
     outline: 1px solid #00000020;
     max-width: 24rem;
-        border-collapse: collapse; 
+    border-collapse: collapse; 
     margin-top: 5rem;
 }
 
@@ -158,6 +158,7 @@ main h1 {
 }
 
 
+
 /* footer-style */
 
 .menu a, .item1 a, .item2 a, .item3 a, .storeConnet a {
@@ -191,6 +192,9 @@ footer {
     font-size: 16px;
 }
 
+.item2{
+    vertical-align:text-top;
+}
 
 .item1Img {
     display: flex;
@@ -240,7 +244,7 @@ footer {
 
 /* MWD 設計 */
 
-/*1215px*/
+/* 1215px-1008px */
 @media screen and (max-width: 1215px) {
     .store{
         /* table-layout: fixed;
@@ -253,28 +257,27 @@ footer {
     }
 }
 
-/*1007px*/
+/* 1007px-898px */
 @media screen and (max-width: 1007px) {
     .store{
         column-gap:0.5rem;
     }
 
     .store-content {
-        outline: 1px solid blue;
+        outline: 1px solid #00000020;
         max-width: 18rem;
     }
 }
 
-/* header .block, main .block, footer .block  {
-    /* max-width: 895px; */
-    /* margin-left: calc(100%/21);
-    margin-right: calc(100%/21); 
-    padding: 1vw;
 
-}  */
-
-/*897-662px*/
+/* 897-662px */
 @media screen and (max-width:897px) {
+    header .block, main .block, footer .block  {
+        max-width: 696px;
+        padding: 1vw;
+    
+    } 
+
     .store{
         /* table-layout: fixed;
         justify-content:flex-start; */
@@ -282,27 +285,10 @@ footer {
        
 
     }
-    /* .storeImg {
-        width: 100%;
-        height: 224px;
-        
-    } */
+
     .store-content {
         outline: 1px solid #00000020;
         max-width: 20rem;
-        /* max-height: 503px; */
-        /* border-collapse: collapse; */
-    } 
-    /* .text1 td, .text2 td{
-        height: 54px;
-    }*/
-    
-    header .block, main .block, footer .block  {
-        max-width: 696px;
-        /* margin-left: calc(100%/21);
-        margin-right: calc(100%/21); */
-        padding: 1vw;
-    
     } 
 
     .item3 ul {
@@ -319,42 +305,42 @@ footer {
     header .block, main .block, footer .block  {
         max-width: 375px;
         margin: 0 auto;
-    
     } 
 
     header .block{
-        display: block;
-
+        max-height: 180px;
+        flex-wrap: wrap;
+        padding: 1vw;
     }
 
 
     .logo img {
         max-width: 50px;
         max-height: 50px;
+        margin-right: 330px;
+        margin: 10px 0 10px 15px;
     }
 
     .menu {
         display: flex;
-        width: px;
         font-size: 20px;
-        border-top: 1px solid #fff;
-        text-align: center;
         flex-wrap: wrap;
         align-items: center;
-
-    }
-    
-    .item1 ul{
-        display: none; 
     }
         
-       
-
-    
-    .menu a{
-        background: #AA0601;
-        padding: 0 50px;
+    .menu li{
+        outline:1.5px solid #fff;
+        width: 50%;
     }
+
+    .menuA, .menuB ,.menuC ,.menuD{
+       padding: 0 auto;
+    } 
+
+    .menu a{
+        padding:0 50px;
+    }
+    
     .store{
         justify-content: center;
     }
@@ -363,45 +349,63 @@ footer {
         outline: 1px solid #00000020;
         max-width: 20rem;
     } 
-    /* .text1 td, .text2 td{
-        height: 54px;
-    }*/
-    
 
+    .location span {
+        font-size:16px;
+    }
 
-    .item3 ul {
-        font-size: 12px;
+    .choose {
+        display: inline;
+        width: 276px;
+        height: 38px;
+    }
+
+    /* footer */
+
+    footer .block{
+        position: relative;
     }
     
-
-    .item1, .item3 {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    .item1 ul{
+        display: none; 
     }
 
     .item1Img {
-        justify-content: center;
-        margin: 1rem 0;
+        position: absolute;
+        right:0;
+        bottom: 160px;
+        gap:0.5rem;
     }
 
-    .telStyle, .mailStyle {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .item1Img img{
+        max-width: 30px;
+        max-height: 30px;
+
     }
+
+  
 
     .telStyle a, .mailStyle a {
-        font-size: 24px;
+        font-size: 16px;
     }
 
-    .down {
-        text-align: center;
+    .telStyle svg,.mailStyle svg {
+        width: 30px;
+        height: 30px;
+    }
+
+ 
+    .item3 {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap:0.5rem;
     }
 
     .item3 ul {
-        width: 100%;
-        justify-content: center;
-        gap: 1.5rem;
+        font-size: 16px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap:0.5rem;
     }
+
 }
